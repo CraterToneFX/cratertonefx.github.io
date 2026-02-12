@@ -84,9 +84,8 @@ document.getElementById("comment-form").addEventListener("submit", e => {
     method: "POST",
     headers,
     body: JSON.stringify({
-      slug,
-      name,
-      message
+  post_id: slug,
+  body: message
     })
   }).then(() => {
     alert("Comment submitted for approval.");
