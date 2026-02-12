@@ -19,7 +19,95 @@
     It did work like it was supposed to, I added text to which transistor I used.<br><br>
         <img src="/pics/Park Auto Wah.png" alt="Park Auto Wah"><br><br>
        Also I changed the speed pot to 100k to slow the slowest down some more.<br>
-       This layout came from <a href="https://dirtboxlayouts.blogspot.com/2021/02/park-auto-wah.html?m=1">Dirtbox Layouts</a>.</p>
+       This layout came from <a href="https://dirtboxlayouts.blogspot.com/2021/02/park-auto-wah.html?m=1">Dirtbox Layouts</a>.<br>
+    
+    <section id="comments">
+  <h3>Comments</h3>
+  <div id="comment-list"></div>
+
+  <form id="comment-form">
+    <input type="text" name="name" placeholder="Name" required>
+    <textarea name="message" placeholder="Comment" required></textarea>
+
+    <!-- Honeypot (hidden bot trap) -->
+    <input type="text" name="website" style="display:none">
+
+    <button type="submit">Post Comment</button>
+  </form>
+</section>
+
+<script>
+const SUPABASE_URL = "https://zzkpinctabgkhpvcahyn.supabase.co";
+const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp6a3BpbmN0YWJna2hwdmNhaHluIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA4NDAxNzAsImV4cCI6MjA4NjQxNjE3MH0.MQ6oiz3v0QUjhLqhVjtoZTnyjCBJLr0KW3uM3j3Fp6U";
+
+const slug = window.location.hostname + window.location.pathname;
+
+const headers = {
+  "Content-Type": "application/json",
+  "apikey": SUPABASE_KEY,
+  "Authorization": `Bearer ${SUPABASE_KEY}`
+};
+
+// Load approved comments
+fetch(`${SUPABASE_URL}/rest/v1/comments?slug=eq.${slug}&approved=eq.true&order=created_at.asc`, {
+  headers
+})
+.then(res => res.json())
+.then(data => {
+  const list = document.getElementById("comment-list");
+  data.forEach(c => {
+    list.innerHTML += `
+      <div class="comment">
+        <strong>${escapeHtml(c.name)}</strong>
+        <p>${escapeHtml(c.message)}</p>
+      </div>
+    `;
+  });
+});
+
+// Submit comment
+document.getElementById("comment-form").addEventListener("submit", e => {
+  e.preventDefault();
+
+  const form = e.target;
+
+  // Honeypot check
+  if (form.website.value) return;
+
+  const name = form.name.value.trim();
+  const message = form.message.value.trim();
+
+  // Basic spam filter
+  if (message.length < 3 || message.length > 2000) return;
+
+  fetch(`${SUPABASE_URL}/rest/v1/comments`, {
+    method: "POST",
+    headers,
+    body: JSON.stringify({
+      slug,
+      name,
+      message
+    })
+  }).then(() => {
+    alert("Comment submitted for approval.");
+    form.reset();
+  });
+});
+
+// Prevent XSS
+function escapeHtml(text) {
+  return text.replace(/[&<>"']/g, function(m) {
+    return ({
+      "&": "&amp;",
+      "<": "&lt;",
+      ">": "&gt;",
+      '"': "&quot;",
+      "'": "&#039;"
+    })[m];
+  });
+}
+</script>
+</p>
            <p><a href="/index.html">Back To Home</a></p>
            
   </article>
