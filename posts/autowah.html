@@ -27,7 +27,7 @@
 
   <form id="comment-form">
     <input type="text" name="name" placeholder="Name" required>
-    <textarea name="message" placeholder="Comment" required></textarea>
+    <textarea name="body" placeholder="Comment" required></textarea>
 
     <!-- Honeypot (hidden bot trap) -->
     <input type="text" name="website" style="display:none">
@@ -86,7 +86,7 @@ document.getElementById("comment-form").addEventListener("submit", e => {
    body: JSON.stringify({
   post_id: slug,
   name: form.name.value,
-  body: form.message.value
+  body: form.body.value
 })
 
   }).then(() => {
