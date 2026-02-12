@@ -21,7 +21,7 @@
        Also I changed the speed pot to 100k to slow the slowest down some more.<br>
        This layout came from <a href="https://dirtboxlayouts.blogspot.com/2021/02/park-auto-wah.html?m=1">Dirtbox Layouts</a>.<br>
     
-<!--   <section id="comments">
+<!--  <section id="comments">
   <h3>Comments</h3>
   <div id="comment-list"></div>
 
@@ -29,16 +29,13 @@
     <input type="text" name="name" placeholder="Name" required>
     <textarea name="body" placeholder="Comment" required></textarea>
 
-    <!-- Honeypot (hidden bot trap) -->
- <!--   <input type="text" name="website" style="display:none">
-
     <button type="submit">Post Comment</button>
   </form>
 </section>
 
 <script>
 const SUPABASE_URL = "https://zzkpinctabgkhpvcahyn.supabase.co";
-const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp6a3BpbmN0YWJna2hwdmNhaHluIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA4NDAxNzAsImV4cCI6MjA4NjQxNjE3MH0.MQ6oiz3v0QUjhLqhVjtoZTnyjCBJLr0KW3uM3j3Fp6U";
+const SUPABASE_KEY = "YOUR_ANON_KEY_HERE";
 
 const slug = window.location.hostname + window.location.pathname;
 
@@ -49,17 +46,18 @@ const headers = {
 };
 
 // Load approved comments
-fetch(`${SUPABASE_URL}/rest/v1/body?slug=eq.${slug}&approved=eq.true&order=created_at.asc`, {
+fetch(`${SUPABASE_URL}/rest/v1/comments?post_id=eq.${slug}&approved=eq.true&order=created_at.asc`, {
   headers
 })
 .then(res => res.json())
 .then(data => {
   const list = document.getElementById("comment-list");
+  list.innerHTML = "";
   data.forEach(c => {
     list.innerHTML += `
       <div class="comment">
-        <strong>${escapeHtml(c.name)}</strong>
-        <p>${escapeHtml(c.message)}</p>
+        <strong>${escapeHtml(c.name || "Anonymous")}</strong>
+        <p>${escapeHtml(c.body)}</p>
       </div>
     `;
   });
@@ -70,25 +68,19 @@ document.getElementById("comment-form").addEventListener("submit", e => {
   e.preventDefault();
 
   const form = e.target;
-
-  // Honeypot check
-  if (form.website.value) return;
-
   const name = form.name.value.trim();
   const body = form.body.value.trim();
 
-  // Basic spam filter
   if (body.length < 3 || body.length > 2000) return;
 
-  fetch(`${SUPABASE_URL}/rest/v1/body`, {
+  fetch(`${SUPABASE_URL}/rest/v1/comments`, {
     method: "POST",
     headers,
-   body: JSON.stringify({
-  post_id: slug,
-  name: form.name.value,
-  body: form.body.value
-})
-
+    body: JSON.stringify({
+      post_id: slug,
+      name: name,
+      body: body
+    })
   }).then(() => {
     alert("Comment submitted for approval.");
     form.reset();
@@ -107,7 +99,8 @@ function escapeHtml(text) {
     })[m];
   });
 }
-</script>  -->
+</script>
+ -->
 </p>
            <p><a href="/index.html">Back To Home</a></p>
            
