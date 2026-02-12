@@ -1,0 +1,36 @@
+
+
+body {
+  background: #0b0b0b;
+  color: #e6e6e6;
+}
+
+a {
+  color: #8ab4ff;
+}
+
+.sidebar-layout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  min-height: 100vh;
+}
+
+.sidebar {
+  padding: 2rem 1.5rem;
+  border-right: 1px solid #222;
+}
+
+.sidebar h1 {
+  font-size: 1.2rem;
+  letter-spacing: 0.04em;
+}
+
+.sidebar nav a {
+  display: block;
+  margin: 0.75rem 0;
+}
+
+.post-card {
+  border-bottom: 1px solid #222;
+  padding-bottom: 1.5rem;
+}

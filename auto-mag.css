@@ -1,0 +1,53 @@
+body {
+  background: #ffffff;
+  color: #111;
+}
+
+.topnav {
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topnav nav a {
+  margin-left: 1.5rem;
+}
+
+.mag-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.post-card {
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+}
+
+/* Auto dark mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #111;
+    color: #eee;
+  }
+
+  .topnav {
+    border-color: #333;
+  }
+  
+    .intro-box {
+    background: #161616;
+    border-color: #333;
+  }
+
+  .post-card {
+    border-color: #333;
+  }
+
+  a {
+    color: #8ab4ff;
+  }
+}
+
