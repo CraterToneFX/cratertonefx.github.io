@@ -64,3 +64,34 @@ article.post .meta {
   opacity: 0.7;
   margin-bottom: 2rem;
 }
+#comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 500px;
+}
+
+#comment-form input,
+#comment-form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  background: #111;
+  border: 1px solid #333;
+  color: #fff;
+  border-radius: 4px;
+}
+
+#comment-form button {
+  width: fit-content;
+  padding: 0.6rem 1rem;
+  background: #ff6a00;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#comment-form button:hover {
+  opacity: 0.9;
+}
