@@ -65,3 +65,15 @@ a {
 #comment-form button:hover {
   opacity: 0.9;
 }
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+ 
+.comment-date {
+  font-size: 0.85em;
+  color: #666;
+}
