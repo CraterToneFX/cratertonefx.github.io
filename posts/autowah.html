@@ -79,33 +79,20 @@ document.getElementById("comment-form").addEventListener("submit", e => {
     body: JSON.stringify({
       post_id: rawSlug,
       name: name,
-      body: body
+      body: body,
+      approved: false
     })
   })
  //.then(() => {
  //   alert("Comment submitted for approval.");
-//    form.reset();
+ //   form.reset();
 //  });
 //});
-    .then(async res => {
-  const data = await res.json();
-  console.log("Status:", res.status);
-  console.log("Response:", data);
-  return data;
-})
-.then(data => {
-  if (!Array.isArray(data)) return;
-  
-  const list = document.getElementById("comment-list");
-  list.innerHTML = "";
-  data.forEach(c => {
-    list.innerHTML += `
-      <div class="comment">
-        <strong>${escapeHtml(c.name || "Anonymous")}</strong>
-        <p>${escapeHtml(c.body)}</p>
-      </div>
-    `;
-  });
+  .then(async res => {
+  const data = await res.text();
+  console.log("Insert status:", res.status);
+  console.log("Insert response:", data);
+  alert("Check console");
 });
 
 // Prevent XSS
