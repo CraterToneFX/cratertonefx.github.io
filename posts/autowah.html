@@ -74,11 +74,21 @@ fetch(`${SUPABASE_URL}/rest/v1/comments?post_id=eq.${encodeURIComponent(rawSlug)
 
   list.innerHTML = "";
   data.forEach(c => {
+      const date = new Date(c.created_at).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit'
+  });
     list.innerHTML += `
-      <div class="comment">
+    <div class="comment">
+      <div class="comment-header">
         <strong>${escapeHtml(c.name || "Anonymous")}</strong>
-        <p>${escapeHtml(c.body)}</p>
+        <span class="comment-date">${date}</span>
       </div>
+      <p>${escapeHtml(c.body)}</p>
+    </div>
     `;
   });
 })
