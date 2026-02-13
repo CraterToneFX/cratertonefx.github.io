@@ -35,9 +35,9 @@
 
 <script>
 const SUPABASE_URL = "https://zzkpinctabgkhpvcahyn.supabase.co";
-const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp6a3BpbmN0YWJna2hwdmNhaHluIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA4NDAxNzAsImV4cCI6MjA4NjQxNjE3MH0.MQ6oiz3v0QUjhLqhVjtoZTnyjCBJLr0KW3uM3j3Fp6U";
+const SUPABASE_KEY = "sb_publishable_FmVutn8fLccmmfSeRM80lQ_TDqR0kTF";
 
-const slug = window.location.hostname + window.location.pathname;
+const slug = encodeURIComponent(window.location.hostname + window.location.pathname);
 
 const headers = {
   "Content-Type": "application/json",
