@@ -77,3 +77,13 @@ a {
   font-size: 0.85em;
   color: #666;
 }
+
+.comment-author {
+  margin-bottom: 8px;
+}
+ 
+.comment-date {
+  font-size: 0.85em;
+  color: #666;
+  margin-top: 2px;
+}
