@@ -82,12 +82,12 @@ document.getElementById("comment-form").addEventListener("submit", e => {
       body: body
     })
   })
-  <!--  .then(() => {
-    alert("Comment submitted for approval.");
-    form.reset();
-  });
-}); -->
-.then(async res => {
+ //.then(() => {
+ //   alert("Comment submitted for approval.");
+//    form.reset();
+//  });
+//});
+    .then(async res => {
   const data = await res.json();
   console.log("Status:", res.status);
   console.log("Response:", data);
@@ -107,7 +107,7 @@ document.getElementById("comment-form").addEventListener("submit", e => {
     `;
   });
 });
-  
+
 // Prevent XSS
 function escapeHtml(text) {
   return text.replace(/[&<>"']/g, function(m) {
