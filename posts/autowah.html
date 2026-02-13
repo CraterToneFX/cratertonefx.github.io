@@ -45,20 +45,34 @@ const headers = {
   "Authorization": `Bearer ${SUPABASE_KEY}`
 };
 
-// Load comments
-fetch(`${SUPABASE_URL}/rest/v1/comments?post_id=eq."${rawSlug}"&approved=eq.true&order=created_at.asc`, {
+// Load comments with better debugging
+console.log("Loading comments for:", rawSlug);
+
+fetch(`${SUPABASE_URL}/rest/v1/comments?post_id=eq.${encodeURIComponent(rawSlug)}&approved=is.true&order=created_at.asc`, {
   headers
 })
-.then(res => res.json())
+.then(res => {
+  console.log("Response status:", res.status);
+  return res.json();
+})
 .then(data => {
+  console.log("Comments data:", data);
+  
   if (!Array.isArray(data)) {
-    console.log("Unexpected response:", data);
+    console.error("Unexpected response format:", data);
+    const list = document.getElementById("comment-list");
+    list.innerHTML = "<p>Error loading comments</p>";
     return;
   }
 
   const list = document.getElementById("comment-list");
-  list.innerHTML = "";
+  
+  if (data.length === 0) {
+    list.innerHTML = "<p>No comments yet. Be the first!</p>";
+    return;
+  }
 
+  list.innerHTML = "";
   data.forEach(c => {
     list.innerHTML += `
       <div class="comment">
@@ -68,7 +82,10 @@ fetch(`${SUPABASE_URL}/rest/v1/comments?post_id=eq."${rawSlug}"&approved=eq.true
     `;
   });
 })
-.catch(err => console.error("Load error:", err));
+.catch(err => {
+  console.error("Load error:", err);
+  document.getElementById("comment-list").innerHTML = "<p>Error loading comments</p>";
+});
 
 // Submit comment
 document.getElementById("comment-form").addEventListener("submit", e => {
