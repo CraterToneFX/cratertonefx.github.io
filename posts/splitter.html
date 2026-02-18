@@ -22,132 +22,21 @@
     Once finished it worked well in testing. I haven't had it hooked to 2 amps yet, my son is going to test that part. I will update with results when available.<br><br></p>
 
     <p><a href="/index.html">Back To Home</a></p>
-  </article>
-
-  <section id="comments">
-  <h3>Comments</h3>
-
-  <form id="comment-form">
-    <input type="text" name="name" placeholder="Name" required>
-    <textarea name="body" placeholder="Comment" required></textarea>
-
-    <button type="submit">Post Comment</button>
-
-  <div id="comment-list"></div> 
-    
-  </form>
-</section>
-<script>
-
-const SUPABASE_URL = "https://zzkpinctabgkhpvcahyn.supabase.co";
-const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp6a3BpbmN0YWJna2hwdmNhaHluIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA4NDAxNzAsImV4cCI6MjA4NjQxNjE3MH0.MQ6oiz3v0QUjhLqhVjtoZTnyjCBJLr0KW3uM3j3Fp6U";
-
-const rawSlug = window.location.hostname + window.location.pathname;
-
-const headers = {
-  "Content-Type": "application/json",
-  "apikey": SUPABASE_KEY,
-  "Authorization": `Bearer ${SUPABASE_KEY}`
-};
-
-// Load comments with better debugging
-console.log("Loading comments for:", rawSlug);
-
-fetch(`${SUPABASE_URL}/rest/v1/comments?post_id=eq.${encodeURIComponent(rawSlug)}&approved=is.true&order=created_at.asc`, {
-  headers
-})
-.then(res => {
-  console.log("Response status:", res.status);
-  return res.json();
-})
-.then(data => {
-  console.log("Comments data:", data);
-  
-  if (!Array.isArray(data)) {
-    console.error("Unexpected response format:", data);
-    const list = document.getElementById("comment-list");
-    list.innerHTML = "<p>Error loading comments</p>";
-    return;
-  }
-
-  const list = document.getElementById("comment-list");
-  
-  if (data.length === 0) {
-    list.innerHTML = "<p>No comments yet. Be the first!</p>";
-    return;
-  }
-
-  list.innerHTML = "";
-data.forEach(c => {
-  const date = new Date(c.created_at).toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'short',
-    day: 'numeric',
-    hour: '2-digit',
-    minute: '2-digit'
-  });
-  
-  list.innerHTML += `
-    <div class="comment">
-      <div class="comment-author">
-        <strong>${escapeHtml(c.name || "Anonymous")}</strong>
-        <div class="comment-date">${date}</div>
-      </div>
-      <p>${escapeHtml(c.body)}</p>
-    </div>
-  `;
-});
-})
-.catch(err => {
-  console.error("Load error:", err);
-  document.getElementById("comment-list").innerHTML = "<p>Error loading comments</p>";
-});
-
-// Submit comment
-document.getElementById("comment-form").addEventListener("submit", e => {
-  e.preventDefault();
-
-  const form = e.target;
-  const name = form.name.value.trim();
-  const body = form.body.value.trim();
-
-  if (body.length < 3 || body.length > 2000) return;
-
-  fetch(`${SUPABASE_URL}/rest/v1/comments`, {
-    method: "POST",
-    headers,
-    body: JSON.stringify({
-      post_id: rawSlug,
-      name: name,
-      body: body,
-      approved: false
-    })
-  })
-  .then(async res => {
-    const text = await res.text();
-    console.log("Insert status:", res.status);
-    console.log("Insert response:", text);
-    alert("Submitted for approval");
-    form.reset();
-  })
-  .catch(err => console.error("Insert error:", err));
-});
-
-// Escape function
-function escapeHtml(text) {
-  return text.replace(/[&<>"']/g, function(m) {
-    return ({
-      "&": "&amp;",
-      "<": "&lt;",
-      ">": "&gt;",
-      '"': "&quot;",
-      "'": "&#039;"
-    })[m];
-  });
-}
-</script>
-
-</main>
-
-</body>
-</html>
+  </article>  <!-- Giscus Comments -->
+  <script src="https://giscus.app/client.js"
+          data-repo="CraterToneFX/cratertonefx.github.io"
+          data-repo-id="YOUR_REPO_ID"
+          data-category="Comments"
+          data-category-id="YOUR_CATEGORY_ID"
+          data-mapping="pathname"
+          data-strict="0"
+          data-reactions-enabled="1"
+          data-emit-metadata="0"
+          data-input-position="bottom"
+          data-theme="preferred_color_scheme"
+          data-lang="en"
+          data-loading="lazy"
+          crossorigin="anonymous"
+          async>
+  </script>
+</main>\n</body>\n</html>
