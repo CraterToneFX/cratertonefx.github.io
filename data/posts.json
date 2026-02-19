@@ -1,5 +1,21 @@
 [
   {
+    "title": "D.A.M. Sonic Titan",
+    "slug": "distortion",
+    "category": "Distortion",
+    "date": "2026-02-19",
+    "excerpt": "Distortion",
+    "url": "/posts/sonic.html"
+  },
+  {
+    "title": "Ersatz Verben Psuedo Reverb",
+    "slug": "assorted",
+    "category": "assorted",
+    "date": "2026-02-19",
+    "excerpt": "Assorted",
+    "url": "/posts/psuedoverb.html"
+  },  
+  {
     "title": "Crowther Hotcake",
     "slug": "overdrive",
     "category": "overdrive",
