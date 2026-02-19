@@ -4,7 +4,7 @@
     "slug": "overdrive",
     "category": "overdrive",
     "date": "2026-02-19",
-    "excerpt": "Crowther Hotcake",
+    "excerpt": "Overdrive",
     "url": "/posts/hotcake.html"
   },  
     {
@@ -12,7 +12,7 @@
     "slug": "distortion",
     "category": "Distortion",
     "date": "2026-02-14",
-    "excerpt": "Big Daddy distortion",
+    "excerpt": "Distortion",
     "url": "/posts/bigdaddy.html"
   },  
   {
@@ -20,7 +20,7 @@
     "slug": "delay",
     "category": "delay",
     "date": "2026-01-20",
-    "excerpt": "Crazy Delay circuit",
+    "excerpt": "Delay",
     "url": "/posts/crapfi.html"
   },  
   {
@@ -28,7 +28,7 @@
     "slug": "chorus",
     "category": "chorus",
     "date": "2026-01-20",
-    "excerpt": "First Chorus circuit",
+    "excerpt": "Chorus",
     "url": "/posts/littleangel.html"
   },
   {
@@ -36,7 +36,7 @@
     "slug": "Boost",
     "category": "boost",
     "date": "2026-01-20",
-    "excerpt": "Versatile boost circuit",
+    "excerpt": "Boost",
     "url": "/posts/lbp1.html"
   },
   {
@@ -44,7 +44,7 @@
     "slug": "Wah",
     "category": "assorted",
     "date": "2026-01-16",
-    "excerpt": "Auto Wah",
+    "excerpt": "Assorted",
     "url": "/posts/autowah.html"
   },
   {
@@ -52,7 +52,7 @@
     "slug": "Overdrive",
     "category": "overdrive",
     "date": "2026-01-12",
-    "excerpt": "Classic Overdrive",
+    "excerpt": "Overdrive",
     "url": "/posts/ts9.html"
   },
   {
@@ -60,7 +60,7 @@
     "slug": "AMZ 2 channel splitter",
     "category": "assorted",
     "date": "2026-01-09",
-    "excerpt": "Nice little splitter - ABY pedal",
+    "excerpt": "Assorted",
     "url": "/posts/splitter.html"
   },
   {
@@ -68,7 +68,7 @@
     "slug": "Fuzz?",
     "category": "fuzz",
     "date": "2026-01-09",
-    "excerpt": "Is it a fuzz?",
+    "excerpt": "Fuzz",
     "url": "/posts/allies.html"
   },
   {
@@ -76,7 +76,7 @@
     "slug": "Muffs",
     "category": "fuzz",
     "date": "2026-01-08",
-    "excerpt": "Different muffs I have tried",
+    "excerpt": "Fuzz",
     "url": "/posts/muffs.html"
   },
   {
@@ -84,7 +84,7 @@
     "slug": "Headphone Amp",
     "category": "amps",
     "date": "2026-01-06",
-    "excerpt": "Versatile little amp",
+    "excerpt": "Amps",
     "url": "/posts/headbanger.html"
   },
   {
@@ -92,7 +92,7 @@
     "slug": "Electra",
     "category": "Distortion",
     "date": "2026-01-06",
-    "excerpt": "Electra Distortion, simple classic",
+    "excerpt": "Distortion",
     "url": "/posts/electra.html"
   },
   {
@@ -108,7 +108,7 @@
     "slug": "First One Tried",
     "category": "amps",
     "date": "2026-01-06",
-    "excerpt": "The first circuit I tried to see if I could make it work",
+    "excerpt": "Amps",
     "url": "/posts/smokeyamp.html"
   }
 ]
