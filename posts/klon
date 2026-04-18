@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Klon Centaur</title>
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/dark-sidebar.css">
+</head>
+<body>
+
+<main>
+  <article class="post">
+    <h1>Klon Centaur</h1>
+    <div class="meta">January 09, 2026 · Fuzz</div>
+
+    <p>This is another circuit that made it's way to my pedal board, but has since been removed. Nothing wrong with the circuit, just not my cup of tea.<br>
+The circuit I built sounded a little muffled, could be the clippers I used or the op amps, I don't know. Maybe that's how they sound.<br>
+I used NOS Russian D9D diodes for clippers, TL072 op amps for both IC's (did have an NE5532 for the 2nd one for a bit) <br>
+and changed the tone pot to B20K to give it a little more brightness at the top of the range.<br><br>
+    <img src="/pics/Klon Centaur - simplified - True Bypass.png" width="800px" height="828px" alt="Klon Centaur"><br><br></p>
+   
+    <p><a href="/index.html">Back To Home</a></p>
+
+  </article>  <!-- Giscus Comments -->
+  <script src="https://giscus.app/client.js"
+          data-repo="CraterToneFX/cratertonefx.github.io"
+          data-repo-id="R_kgDOROYTiw"
+          data-category="Announcements"
+          data-category-id="DIC_kwDOROYTi84C2uYe"
+          data-mapping="pathname"
+          data-strict="0"
+          data-reactions-enabled="1"
+          data-emit-metadata="0"
+          data-input-position="bottom"
+          data-theme="preferred_color_scheme"
+          data-lang="en"
+          data-loading="lazy"
+          crossorigin="anonymous"
+          async>
+  </script>
+</main>
+</body>
+</html>
