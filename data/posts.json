@@ -2,7 +2,7 @@
     {
     "title": "Boss SD1",
     "slug": "overdrive",
-    "category": "Overdrive",
+    "category": "overdrive",
     "date": "2026-06-27",
     "excerpt": "Overdrive",
     "url": "/posts/bossSD1.html"
@@ -26,7 +26,7 @@
    {
     "title": "Klon Centaur",
     "slug": "overdrive",
-    "category": "Overdrive",
+    "category": "overdrive",
     "date": "2026-04-18",
     "excerpt": "Overdrive",
     "url": "/posts/klon.html"
