@@ -1,4 +1,12 @@
-[
+[  
+    {
+    "title": "BSIAB II",
+    "slug": "distortion",
+    "category": "Distortion",
+    "date": "2026-07-01",
+    "excerpt": "Distortion",
+    "url": "/posts/bsiab.html"
+  },
     {
     "title": "Boss SD1",
     "slug": "overdrive",
