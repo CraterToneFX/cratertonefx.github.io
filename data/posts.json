@@ -1,5 +1,13 @@
 [  
     {
+    "title": "Schematics - Distortion",
+    "slug": "Schematics",
+    "category": "schematics",
+    "date": "2026-07-02",
+    "excerpt": "Schematics",
+    "url": "/posts/distortion.html"
+  },
+    {
     "title": "BSIAB II",
     "slug": "distortion",
     "category": "Distortion",
