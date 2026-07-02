@@ -1,21 +1,12 @@
 [  
     {
-    "title": "Schematics - Delay",
-    "slug": "Schematics",
-    "category": "schematics",
-    "date": "2026-07-02",
-    "excerpt": "Schematics",
-    "url": "/posts/delay.html"
-  },
-    {
     "title": "Schematics - Overdrive",
     "slug": "Schematics",
     "category": "schematics",
     "date": "2026-07-02",
     "excerpt": "Schematics",
     "url": "/posts/overdrive.html"
-  },
-    
+  }, 
     {
     "title": "Schematics - Distortion",
     "slug": "Schematics",
@@ -23,6 +14,23 @@
     "date": "2026-07-02",
     "excerpt": "Schematics",
     "url": "/posts/distortion.html"
+  },
+   {
+    "title": "Schematics - Delay",
+    "slug": "Schematics",
+    "category": "schematics",
+    "date": "2026-07-02",
+    "excerpt": "Schematics",
+    "url": "/posts/delay.html"
+  },
+    
+    {
+    "title": "Schematics - Amps",
+    "slug": "Schematics",
+    "category": "schematics",
+    "date": "2026-07-02",
+    "excerpt": "Schematics",
+    "url": "/posts/amps.html"
   },
     {
     "title": "BSIAB II",
