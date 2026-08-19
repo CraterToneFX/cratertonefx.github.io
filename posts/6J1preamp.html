@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>6J1 Preamp</title>
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/dark-sidebar.css">
+</head>
+<body>
+
+<main>
+  <article class="post">
+    <h1>6J1 Preamp</h1>
+    <div class="meta">August 19, 2026 · CraterToneFX Circuits</div>
+
+    		<p>⚠️ DANGER: HIGH VOLTAGE CIRCUIT DETAILS  
+ 
+The CraterToneFX 6J1 preamp schematic reveals critical high-voltage nodes that require explicit warnings for DIY builders: 
+ 
+Specific Circuit Hazards 
+ 
+    177V DC Main Rail: The power supply source V2 delivers a lethal 177V DC directly to the circuit. 
+    Plate Resistors: High voltage is continuously present across R3 (100k) and R5 (47k). 
+    Filter Capacitor: Capacitor C2 (10µF) stores 177V DC and will retain this lethal charge long after the power is unplugged unless properly discharged. 
+    AC Signal Path: The circuit couples high DC voltage through C3 and C9 into the tone and volume controls. 
+     
+Safety Standards for High-Voltage DIY 
+ 
+Working with vacuum tube circuits like the 6J1 preamp involves significant physical risks due 
+to high-voltage direct current. Ensuring safety requires strict adherence to electrical 
+engineering best practices: 
+ 
+    Professional Consultation: For those without formal training in high-voltage electronics, consulting with a licensed electrical engineer or a certified technician is essential before attempting to build or service such devices. 
+    Safety Equipment: Proper maintenance of these circuits requires specialized tools and personal protective equipment (PPE), including insulated tools rated for high voltage and high-impedance multimeters for testing. 
+    Workplace Safety: Following the "one-hand rule" and ensuring the work area is non-conductive can help mitigate risks during testing. 
+    Discharge Protocols: High-voltage capacitors must be handled according to industry safety standards to ensure they are fully de-energized before any physical contact is made with the circuit. 
+    Regulatory Compliance: All DIY electronic builds should comply with local electrical codes and safety regulations (such as UL or CE standards where applicable) to prevent fire hazards and electrical shock.</p>
+	
+    <p>This is a guitar preamp circuit schematic that was created because I had a couple of the 6J1 tubes laying around. <br>
+      They came from one of those preamp / headphone amp kits that you can find on AMAZON, EBAY, etc.<br>
+      I wanted to do something with them for a while and finally got around to it. <br>
+      So this is what I came up with.<br><br>
+    <img src="/pics/6J1preamp.png" width="800px" height="300px" alt="6J1 preamp"><br><br>
+      It is 2 - 6j1 tubes wired as triodes with a Marshall style tonestack and gain control in between the stages.<br>
+      It sounds pretty good for what it is. Slight breakup when it's by itself, very little.<br>
+      When you put a distortion pedal in front of it it has some of that tube sound you would be looking for.<br>
+      Definitely better sounding than I thought it was going to be.<br>
+      It has plenty of output too, so far have only tested running it into an MXR headphone amp clone.<br>
+      The volume has only been at about 2 for that, running it into an amp will be the real test I guess.<br>
+      I'll eventually get to that.<br>
+      Here is the BOM.<br><br>
+      <img src="/pics/6J1preampBOM.png" width="285px" height="635px" alt="6J1 preamp"><br><br>
+      As far as powering this circuit, I used what I had...some salvaged but mostly new stuff<br>
+      Back to back transformer setup. 2 small salvaged ones.<br>
+      Pulled a line from 1st one for tube heater feed that goes to buck converter to get it down to 6.3vdc.<br>
+      2nd one boosts the output up to 177vdc for the B+ feed for the tubes.<br>
+      Here is a simple diagram of that layout.<br><br>
+     <img src="/pics/6J1preampPower.png" width="800px" height="383px" alt="6J1 preamp"><br><br>
+      All in all not a bad little project that ended up sounding pretty good.
+                                                                                                               
+    </p>
+   
+    <p><a href="/index.html">Back To Home</a></p>
+
+  </article>  <!-- Giscus Comments -->
+  <script src="https://giscus.app/client.js"
+          data-repo="CraterToneFX/cratertonefx.github.io"
+          data-repo-id="R_kgDOROYTiw"
+          data-category="Announcements"
+          data-category-id="DIC_kwDOROYTi84C2uYe"
+          data-mapping="pathname"
+          data-strict="0"
+          data-reactions-enabled="1"
+          data-emit-metadata="0"
+          data-input-position="bottom"
+          data-theme="preferred_color_scheme"
+          data-lang="en"
+          data-loading="lazy"
+          crossorigin="anonymous"
+          async>
+  </script>
+</main>
+</body>
+</html>
