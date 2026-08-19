@@ -1,36 +1,11 @@
 [  
     {
-    "title": "Schematics - Overdrive",
-    "slug": "Schematics",
-    "category": "schematics",
-    "date": "2026-07-02",
-    "excerpt": "Schematics",
-    "url": "/posts/overdrive.html"
-  }, 
-    {
-    "title": "Schematics - Distortion",
-    "slug": "Schematics",
-    "category": "schematics",
-    "date": "2026-07-02",
-    "excerpt": "Schematics",
-    "url": "/posts/distortion.html"
-  },
-   {
-    "title": "Schematics - Delay",
-    "slug": "Schematics",
-    "category": "schematics",
-    "date": "2026-07-02",
-    "excerpt": "Schematics",
-    "url": "/posts/delay.html"
-  },
-    
-    {
-    "title": "Schematics - Amps",
-    "slug": "Schematics",
-    "category": "schematics",
-    "date": "2026-07-02",
-    "excerpt": "Schematics",
-    "url": "/posts/amps.html"
+    "title": "CraterToneFX Circuits",
+    "slug": "CraterToneFX Circuits",
+    "category": "CraterToneFX Circuits",
+    "date": "2026-08-19",
+    "excerpt": "Circuits",
+    "url": "/posts/6J1preamp.html"
   },
     {
     "title": "BSIAB II",
