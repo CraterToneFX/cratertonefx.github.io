@@ -117,3 +117,42 @@ article.post .meta {
   color: #666;
   margin-top: 2px;
 }
+
+.coming-soon-box {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  margin: 1.5rem 0;
+  max-width: 100%;
+  transition: all 0.3s ease;
+}
+
+/* Style for the clickable header */
+.coming-soon-box summary {
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  padding: 0.5rem 0;
+  user-select: none;
+}
+
+/* Subtle hover effect to let users know it's interactive */
+.coming-soon-box summary:hover {
+  color: #0076ff; /* Change this to match your site's accent color */
+}
+
+/* Style for the inside content when expanded */
+.coming-soon-content {
+  padding: 1rem 0 0.5rem 0;
+  border-top: 1px solid #eee;
+}
+
+.coming-soon-content ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.coming-soon-content li {
+  margin-bottom: 0.5rem;
+}
