@@ -163,38 +163,30 @@ article.post .meta {
 }
 
 .breadcrumbs {
-  margin: 1rem 0 2rem 0;
-  padding: 0;
+  margin: 1.5rem 0;
+  padding-bottom: 0.75rem;
+  /* Adds a subtle breakline separating nav controls from the circuit title */
+  border-bottom: 1px solid rgba(128, 128, 128, 0.15); 
   font-size: 0.9rem;
 }
 
 .breadcrumbs ol {
   display: flex;
-  flex-wrap: wrap;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.breadcrumbs li {
-  display: flex;
-  align-items: center;
-}
-
-/* Adds a clean chevron separator style between links */
 .breadcrumbs li:not(:last-child)::after {
   content: "›";
-  margin: 0 0.6rem;
+  margin: 0 0.5rem;
   opacity: 0.4;
-  font-weight: bold;
-  font-size: 1.1rem;
 }
 
-/* Links stay clean and inherit the current theme's default link behavior */
 .breadcrumbs a {
   text-decoration: none;
-  opacity: 0.8;
   color: inherit;
+  opacity: 0.8;
 }
 
 .breadcrumbs a:hover {
@@ -202,8 +194,15 @@ article.post .meta {
   text-decoration: underline;
 }
 
-/* The current page text is slightly muted so the user knows it's unclickable */
-.breadcrumbs li[aria-current="page"] {
-  opacity: 0.5;
-  pointer-events: none;
+.back-home-link {
+  display: inline-block;
+  margin-top: 2rem;
+  text-decoration: none;
+  color: inherit;
+  opacity: 0.7;
+}
+
+.back-home-link:hover {
+  opacity: 1;
+  text-decoration: underline;
 }
