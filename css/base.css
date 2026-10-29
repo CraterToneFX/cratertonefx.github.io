@@ -119,13 +119,17 @@ article.post .meta {
 }
 
 .coming-soon-box {
-  background-color: #1e1e1e; /* Dark background to match your theme */
-  border: 1px solid #333333;  /* Subtle dark border */
+  /* Using 'currentColor' inherits the site's default text color dynamically */
+  color: inherit;
+  
+  /* Fallback transparency values ensure it adapts to whatever background is behind it */
+  background-color: rgba(128, 128, 128, 0.08); 
+  border: 1px solid rgba(128, 128, 128, 0.25);
+  
   border-radius: 6px;
   padding: 0.5rem 1rem;
   margin: 1.5rem 0;
   max-width: 100%;
-  color: #ffffff;            /* Forces text to be crisp and white */
 }
 
 /* Style for the clickable header */
@@ -135,19 +139,18 @@ article.post .meta {
   outline: none;
   padding: 0.5rem 0;
   user-select: none;
-  color: #ffffff;            /* Keeps the header white */
 }
 
-/* Subtle amber/orange hover accent common in guitar/dark gear aesthetics */
+/* Subtle hover effect that works on both light and dark backgrounds */
 .coming-soon-box summary:hover {
-  color: #ff9f43; 
+  opacity: 0.8;
+  text-decoration: underline;
 }
 
 /* Style for the inside content when expanded */
 .coming-soon-content {
   padding: 1rem 0 0.5rem 0;
-  border-top: 1px solid #333333; /* Dark divider line */
-  color: #e0e0e0;            /* Slightly softer white for the description body */
+  border-top: 1px solid rgba(128, 128, 128, 0.2);
 }
 
 .coming-soon-content ul {
@@ -158,4 +161,3 @@ article.post .meta {
 .coming-soon-content li {
   margin-bottom: 0.5rem;
 }
-
