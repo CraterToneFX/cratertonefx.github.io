@@ -9,6 +9,16 @@
 <body>
 
 <main>
+
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="/">Home</a></li>
+    <!-- The leading slash keeps the browser locked to your main domain directory -->
+    <li><a href="/categories/distortion.html">Distortion</a></li>
+    <li aria-current="page">BSIAB II</li>
+  </ol>
+</nav>
+  
   <article class="post">
     <h1>BSIAB II</h1>
     <div class="meta">July 01, 2026 · Distortion</div>
@@ -20,7 +30,8 @@
     I used MMBFJ201 JFETs throughout so I think it has more gain than it probably should.<br>
     I have the gain turned down quite a bit. Maybe that's why it's not on my board, but I do love the sound of it.</p>
    
-    <p><a href="/index.html">Back To Home</a></p>
+   <!-- Replace relative trail links with an absolute anchor -->
+<p><a href="/" class="back-home-link">← Back To Home</a></p>
 
   </article>  <!-- Giscus Comments -->
   <script src="https://giscus.app/client.js"
