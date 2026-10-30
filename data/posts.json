@@ -4,7 +4,7 @@
     "slug": "distortion",
     "category": "Distortion",
     "date": "2026-08-29",
-    "excerpt": "Distortion",
+    "excerpt": "A few vermin",
     "url": "/posts/rats.html"
   },
    {
@@ -12,7 +12,7 @@
     "slug": "Phase 45",
     "category": "assorted",
     "date": "2026-08-29",
-    "excerpt": "Assorted",
+    "excerpt": "Phaser",
     "url": "/posts/phase45.html"
   },
     {
@@ -20,7 +20,7 @@
     "slug": "CraterToneFX Circuits",
     "category": "CraterToneFX Circuits",
     "date": "2026-08-19",
-    "excerpt": "Circuits",
+    "excerpt": "Something to do with those tubes",
     "url": "/posts/6J1preamp.html"
   },
     {
@@ -28,7 +28,7 @@
     "slug": "distortion",
     "category": "Distortion",
     "date": "2026-07-01",
-    "excerpt": "Distortion",
+    "excerpt": "Brown Sound",
     "url": "/posts/bsiab.html"
   },
     {
@@ -36,7 +36,7 @@
     "slug": "overdrive",
     "category": "overdrive",
     "date": "2026-06-27",
-    "excerpt": "Overdrive",
+    "excerpt": "Classic Boss Overdrive",
     "url": "/posts/bossSD1.html"
   },
    {
@@ -44,7 +44,7 @@
     "slug": "Tonestacks",
     "category": "assorted",
     "date": "2026-06-18",
-    "excerpt": "Assorted",
+    "excerpt": "Assorted tone setups",
     "url": "/posts/tonestack.html"
   },
     {
@@ -52,7 +52,7 @@
     "slug": "MXR Headhone Amp",
     "category": "amps",
     "date": "2026-04-28",
-    "excerpt": "Amps",
+    "excerpt": "Nice headphone amp for guitar",
     "url": "/posts/mxrHeadphone.html"
   },
    {
@@ -60,7 +60,7 @@
     "slug": "overdrive",
     "category": "overdrive",
     "date": "2026-04-18",
-    "excerpt": "Overdrive",
+    "excerpt": "Classic Overdrive",
     "url": "/posts/klon.html"
   },
     {
@@ -68,7 +68,7 @@
     "slug": "EQ",
     "category": "assorted",
     "date": "2026-03-07",
-    "excerpt": "Assorted",
+    "excerpt": "Boss 7 band Equalizer",
     "url": "/posts/bossge7.html"
   },
   {
@@ -84,7 +84,7 @@
     "slug": "assorted",
     "category": "assorted",
     "date": "2026-02-19",
-    "excerpt": "Assorted",
+    "excerpt": "Mild reverb",
     "url": "/posts/psuedoverb.html"
   },  
   {
@@ -108,7 +108,7 @@
     "slug": "delay",
     "category": "delay",
     "date": "2026-01-20",
-    "excerpt": "Delay",
+    "excerpt": "Lo Fi Delay",
     "url": "/posts/crapfi.html"
   },  
   {
@@ -124,7 +124,7 @@
     "slug": "Boost",
     "category": "boost",
     "date": "2026-01-20",
-    "excerpt": "Boost",
+    "excerpt": "Classic Boost Circuit",
     "url": "/posts/lbp1.html"
   },
   {
@@ -140,7 +140,7 @@
     "slug": "Overdrive",
     "category": "overdrive",
     "date": "2026-01-12",
-    "excerpt": "Overdrive",
+    "excerpt": "The Original Overdrive ?",
     "url": "/posts/ts9.html"
   },
   {
@@ -156,7 +156,7 @@
     "slug": "Fuzz?",
     "category": "fuzz",
     "date": "2026-01-09",
-    "excerpt": "Fuzz",
+    "excerpt": "Is it a Fuzz",
     "url": "/posts/allies.html"
   },
   {
@@ -164,7 +164,7 @@
     "slug": "Muffs",
     "category": "fuzz",
     "date": "2026-01-08",
-    "excerpt": "Fuzz",
+    "excerpt": "Many Muffs",
     "url": "/posts/muffs.html"
   },
   {
@@ -172,7 +172,7 @@
     "slug": "Headphone Amp",
     "category": "amps",
     "date": "2026-01-06",
-    "excerpt": "Amps",
+    "excerpt": "Headphone Amp",
     "url": "/posts/headbanger.html"
   },
   {
@@ -180,7 +180,7 @@
     "slug": "Electra",
     "category": "Distortion",
     "date": "2026-01-06",
-    "excerpt": "Distortion",
+    "excerpt": "Classic Distortion Circuit",
     "url": "/posts/electra.html"
   },
   {
@@ -188,7 +188,7 @@
     "slug": "First One Tried",
     "category": "amps",
     "date": "2026-01-06",
-    "excerpt": "Amps",
+    "excerpt": "Easy beginner circuit",
     "url": "/posts/smokeyamp.html"
   }
 ]
