@@ -1,4 +1,12 @@
-[ 
+[
+      {
+    "title": "Lovepedal Purple Plexi",
+    "slug": "distortion",
+    "category": "Distortion",
+    "date": "2026-10-30",
+    "excerpt": "Another LM386 distortion circuit",
+    "url": "/posts/purpleplex.html"
+  },
    {
     "title": "Down the Rat Hole",
     "slug": "distortion",
