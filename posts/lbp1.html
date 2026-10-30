@@ -9,6 +9,16 @@
 <body>
 
 <main>
+     
+	<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="/">Home</a></li>
+    <!-- The leading slash keeps the browser locked to your main domain directory -->
+    <li><a href="/categories/boost.html">Boosts</a></li>
+    <li aria-current="page">EHX LBP-1</li>
+  </ol>
+</nav>
+  
   <article class="post">
     <h1>EHX LBP-1</h1>
     <div class="meta">January 20, 2026 · Boosts</div>
@@ -23,7 +33,8 @@
     <img src="/pics/Electro_Harmonix_LPB1_with_trimmer.png" alt="EHX LBP-1 vero"><br><br>
     </p>
     
-    <p><a href="/index.html">Back To Home</a></p>
+    <!-- Replace relative trail links with an absolute anchor -->
+<p><a href="/" class="back-home-link">← Back To Home</a></p>
            
   </article>  <!-- Giscus Comments -->
   <script src="https://giscus.app/client.js"
