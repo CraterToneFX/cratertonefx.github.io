@@ -1,5 +1,13 @@
 [
       {
+    "title": "CTFX Fuzz Face",
+    "slug": "CraterToneFX Circuits",
+    "category": "CraterToneFX Circuits",
+    "date": "2026-11-16",
+    "excerpt": "My take on the classic silicon Fuzz Face",
+    "url": "/posts/CTFX_FF.html"
+  },
+      {
     "title": "Marshall MG100DFX Repair",
     "slug": "Amps",
     "category": "amps",
